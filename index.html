@@ -423,6 +423,41 @@
       body { background: white; padding: 0; }
       .page { box-shadow: none; width: 100%; }
     }
+
+    @media (max-width: 700px) {
+      body { padding: 0; background: var(--cream); }
+
+      .page {
+        grid-template-columns: 1fr;
+        width: 100%;
+        box-shadow: none;
+      }
+
+      .sidebar {
+        padding: 40px 28px 36px;
+      }
+
+      .avatar-ring {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 18px;
+      }
+
+      .avatar-initials { font-size: 1.6rem; }
+      .sidebar-name { font-size: 1.6rem; }
+      .s-section { margin-bottom: 28px; }
+
+      .main { padding: 36px 24px 40px; }
+      .main-name { font-size: 2.2rem; }
+      .bio { max-width: 100%; font-size: 0.82rem; }
+
+      .entry-top { flex-direction: column; gap: 4px; }
+      .entry-date { margin-top: 0; }
+
+      .projects-grid { grid-template-columns: 1fr; }
+      .edu-block { flex-direction: column; gap: 4px; }
+      .section-title { font-size: 0.6rem; }
+    }
   </style>
 </head>
 <body>
